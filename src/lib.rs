@@ -1,3 +1,26 @@
+//! Stirling's Approximation
+//!
+//! Provide 2 functions (to_f64 and to_bigdecimal) that calculates the
+//! factorial of a number using the Stirling's Approximation formula.
+//!
+//! This formula let you calculate the factorial with a very good precision
+//! for big numbers, and is not recursive, which saves a lot of computation
+//! time.
+//!
+//! The formula is the following:
+//! n! = sqrt(2 * PI * n) * (n / E) ^ n
+//!
+//! # Example
+//!
+//! ```
+//! use stirling_approximation;
+//!
+//! let factorial = stirling_approximation::to_f64(10);
+//! let high_precision_factorial = stirling_approximation::to_bigdecimal(10);
+//!
+//! println!("The factorial of 10 is: {}", factorial);
+//! println!("The high precision factorial of 10 is: {}", high_precision_factorial);
+//! ```
 use bigdecimal::{BigDecimal, FromPrimitive, ToPrimitive};
 use std::{
     f64::consts::{E, PI},
