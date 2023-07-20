@@ -16,7 +16,7 @@
 //! use stirling_approximation;
 //!
 //! let factorial = stirling_approximation::to_f64(10);
-//! let high_precision_factorial = stirling_approximation::to_bigdecimal(10);
+//! let high_precision_factorial = stirling_approximation::to_bigdecimal(10).unwrap();
 //!
 //! println!("The factorial of 10 is: {}", factorial);
 //! println!("The high precision factorial of 10 is: {}", high_precision_factorial);
