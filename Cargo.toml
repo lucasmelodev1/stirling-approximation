@@ -2,6 +2,9 @@
 name = "stirling_approximation"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "Stirling's approximation to factorials"
+repository = "https://github.com/lucasmelodev1/stirling-approximation.git"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
